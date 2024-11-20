@@ -1,0 +1,65 @@
+
+
+
+
+<!-- Cuerpo de la Pagina -->
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Contactanos</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
+
+  <div class="ion-justify-content-center ion-align-items-center" style="display: flex; height: 100%;">
+    <form (submit)="enviarFormulario($event)" style="width: 100%; max-width: 400px;">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre" name="nombre" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" name="email" required></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Descripción</ion-label>
+        <ion-textarea [(ngModel)]="descripcion" name="descripcion" required></ion-textarea>
+      </ion-item>
+      <ion-button expand="full" type="submit">Enviar</ion-button>
+    </form>
+  </div>
+
+  <ion-toast id="toast-success" message="Su mensaje se ha enviado correctamente" duration="2000" position="bottom">
+  </ion-toast>
+</ion-content>
+<!-- Fin Cuerpo de la Pagina -->
+
+<!-- Inicio Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col size-md="4" class="ion-text-center">
+          <ion-button (click)="mostrarMensajeRedNoDisponible()" fill="clear">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size-md="4" class="ion-text-center">
+          <ion-button routerLink="/contactanos" fill="clear">
+            <ion-icon name="people-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size-md="4" class="ion-text-center">
+          <ion-button (click)="mostrarMensajeRedNoDisponible()" fill="clear">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
+<!-- Fin Footer -->

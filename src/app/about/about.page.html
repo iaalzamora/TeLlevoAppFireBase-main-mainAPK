@@ -1,0 +1,62 @@
+<!-- Cuerpo de la Pagina -->
+<ion-content [fullscreen]="true">
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Sobre Nosotros</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <div class="container">
+        <h2>TeLlevoAPP: Facilitando el retorno seguro y accesible</h2>
+        <p>
+          TeLlevoAPP nace como una solución innovadora a los desafíos de movilidad que han surgido
+          durante la pandemia y el retorno gradual a la presencialidad en las instituciones de educación superior.
+          Ante la falta de transporte público en horarios vespertinos y el alto costo de servicios particulares como Uber o taxis,
+          la comunidad educativa se ha unido para crear una plataforma que facilita el regreso seguro de los estudiantes a sus hogares.
+        </p>
+        <p>
+          Con el apoyo de los alumnos de Duoc UC, TeLlevoAPP permite a los estudiantes organizarse y coordinar viajes
+          compartidos utilizando los vehículos de aquellos que cuentan con transporte propio. Nuestra misión es no solo brindar
+          una solución cómoda y económica, sino también fomentar la colaboración y el sentido de comunidad entre los estudiantes.
+        </p>
+        <p>
+          Disponible para Android e iOS, TeLlevoAPP busca mejorar la calidad de vida de los estudiantes, reduciendo las dificultades
+          logísticas al final de la jornada académica. Creemos en el poder de la tecnología para conectar a las personas y ofrecer
+          soluciones prácticas a problemas cotidianos. ¡Únete y facilita tu retorno a casa con TeLlevoAPP!
+        </p>
+      </div>
+    </ion-content>
+  </div>
+</ion-content>
+<!-- Fin Cuerpo de la Pagina -->
+
+
+<!-- Inicio Footer -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col size-md="4" class="ion-text-center">
+          <ion-button (click)="mostrarMensajeRedNoDisponible()" fill="clear">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size-md="4" class="ion-text-center">
+          <ion-button routerLink="/contactanos" fill="clear">
+            <ion-icon name="people-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size-md="4" class="ion-text-center">
+          <ion-button (click)="mostrarMensajeRedNoDisponible()" fill="clear">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
+<!-- Fin Footer -->

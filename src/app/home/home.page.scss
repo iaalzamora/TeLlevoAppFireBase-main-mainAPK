@@ -1,0 +1,89 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+
+.page-title {
+  text-align: center;
+  margin: 16px 0;
+}
+
+#subtitle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: black;
+  padding: 16px;
+}
+
+#container {
+  padding: 20px;
+}
+
+.welcome-container {
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  
+  h1 {
+    font-size: 24px;
+    line-height: 30px;
+    color: black; // Cambiado a negro
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    color: black; // Cambiado a negro
+    margin: 0;
+  }
+}
+
+.animated-logo {
+  font-size: 60px; // Tamaño del ícono
+  color: #3880ff; // Color del ícono
+  display: inline-block;
+  animation: phoneCall 1.5s infinite;
+}
+
+@keyframes phoneCall {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(15deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}

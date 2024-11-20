@@ -1,0 +1,13 @@
+<ion-list>
+  <ion-item *ngFor="let car of cars">
+    <ion-card>
+      <img alt="Silhouette of mountains" src={{car.imageUrl}} />
+      <ion-card-header>
+        <ion-card-title>Modelo del vehiculo: {{car.nombre}}</ion-card-title>
+        <ion-card-subtitle>Año del vehiculo: {{car.year}}</ion-card-subtitle>
+        <ion-card-subtitle>Patente: {{car.patente}}</ion-card-subtitle>
+        <ion-button expand="full" color="success" (click)="pedirJuber()">Pedir juber</ion-button>
+      </ion-card-header>
+    </ion-card>
+  </ion-item>
+</ion-list>

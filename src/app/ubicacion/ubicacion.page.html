@@ -1,0 +1,60 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Ubicación</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+
+  <div class="container ion-padding">
+  
+    <ion-card class="map-card">
+      <img src="assets/images/Mapa.png" alt="Ubicación" class="location-image" />
+    </ion-card>
+
+    <div class="ion-padding">
+      <ion-button expand="block" color="primary" (click)="obtenerUbicacionActual()">Obtener mi ubicación actual</ion-button>
+    </div>
+
+   
+    <ion-card *ngIf="ubicacion">
+      <ion-card-header>
+        <ion-card-title>Detalles de la Ubicación</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Dirección:</strong> {{ ubicacion.formatted_address }}</p>
+        <p><strong>Latitud:</strong> {{ ubicacion.geometry.location.lat }}</p>
+        <p><strong>Longitud:</strong> {{ ubicacion.geometry.location.lng }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+<!-- Footer de la página -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row class="ion-justify-content-center ion-align-items-center">
+        <ion-col size="4" class="ion-text-center">
+          <ion-button (click)="mostrarMensajeRedNoDisponible()" fill="clear">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-button routerLink="/contactanos" fill="clear">
+            <ion-icon name="people-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="4" class="ion-text-center">
+          <ion-button (click)="mostrarMensajeRedNoDisponible()" fill="clear">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
+<!-- Fin Footer de la página -->

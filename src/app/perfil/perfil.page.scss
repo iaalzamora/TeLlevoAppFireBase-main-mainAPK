@@ -1,0 +1,42 @@
+/* Contenedor de perfil */
+.perfil {
+  text-align: center; /* Centra el contenido */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+.icon {
+  font-size: 80px; /* Tamaño del ícono */
+  color: #3880ff; /* Color del ícono */
+  margin-bottom: 10px; /* Espaciado inferior del ícono */
+}
+
+ion-card-title {
+  margin: 16px 0; /* Margen superior e inferior */
+  font-weight: bold; /* Negrita para el título */
+}
+
+/* Estilo de la lista en ion-card */
+ion-list {
+  padding: 0; /* Eliminar padding para alineación */
+}
+
+/* Espaciado para los ítems */
+ion-item {
+  --inner-padding-end: 16px; /* Espaciado interno para la derecha */
+}
+
+/* Alineación de los labels dentro de ion-item */
+ion-label {
+  text-align: left; /* Alinear texto a la izquierda */
+}
+
+/* Aumentar el tamaño de los títulos en los ítems */
+h3 {
+  font-size: 16px; /* Tamaño de fuente del título */
+  margin: 0; /* Eliminar margen */
+}
+
+p {
+  margin: 0; /* Eliminar margen */
+  color: #666; /* Color del texto */
+}
